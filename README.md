@@ -1,2 +1,1 @@
-# AMIANLPWG2018
-AMIA2018 NLP-WG Presymposium
+# Translational AI Submmit 2024
