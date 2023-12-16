@@ -28,17 +28,21 @@
     .header-logo-img {
         width: 300px; /* You can change this value to adjust the size */
     } */
-    .speaker-photo {
-      width: 300px; /* Adjust as necessary */
-      height: 300px; /* Adjust as necessary */
-      border-radius: 50%;
-      object-fit: cover;
-      background: white;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+    /* Style for widget titles, adjust the font size and color to match the Steering Committee section */
+    .widget-heading {
+        font-size: 20px; /* This should be the same size as your Steering Committee heading */
+        color: #333; /* This should be the same color as your Steering Committee heading */
+        text-align: center; /* Assuming you want it centered */
+        margin-top: 20px; /* Adjust as needed for spacing */
     }
-    </style> 
+    
+    /* Adjust speaker info styles if necessary */
+    .speaker-info {
+        margin: 0.5em 0;
+        font-size: 1em; /* Adjust to match the Steering Committee text size */
+        text-align: center; /* Center the text */
+    }
+    </style>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
     <link rel="stylesheet" id="contact-form-7-css" href="./styles.css" type="text/css" media="all">
     <link rel="stylesheet" id="NextGEN-css" href="./nggallery.css" type="text/css" media="screen">
@@ -187,23 +191,18 @@
         </div>
         
         <!-- Keynote Speakers Section -->
-        <div id="keynote-speakers" class="widget widget-speakers" style="text-align: center;">
-            <h2 style="font-size: 2em; margin-bottom: 0.5em;">Keynote Speakers</h2>
-            <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
-                <!-- Caroline Chung -->
-                <div style="max-width: 300px;">
-                    <img src="https://raw.githubusercontent.com/OHNLP/TranslationalAISummit2024/main/chung.jpg" alt="Caroline Chung" class="speaker-photo">
-                    <h3 style="margin: 0; font-size: 1.5em;">Caroline Chung, M.D., MSc., FRCPC, CIP</h3>
-                    <p style="margin: 0.5em 0;">Vice President and Chief Data Officer at MD Anderson Cancer Center</p>
-                </div>
-                <!-- Joshua C. Denny -->
-                <div style="max-width: 300px;">
-                    <img src="https://raw.githubusercontent.com/OHNLP/TranslationalAISummit2024/main/josh.jpg" alt="Joshua C. Denny" class="speaker-photo">
-                    <h3 style="margin: 0; font-size: 1.5em;">Joshua C. Denny, MD, MS, FACMI</h3>
-                    <p style="margin: 0.5em 0;">Chief Executive Officer, All of Us Research Program, NIH</p>
+        <div id="keynote-speakers" class="widget widget-speakers">
+            <div class="container">
+                <div class="widget-header">
+                    <!-- Use the class 'widget-heading' to apply consistent styling -->
+                    <h2 class="widget-heading">Keynote Speakers</h2>
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                        <!-- Speaker photos and descriptions here, ensure they use the 'speaker-photo' and 'speaker-info' classes respectively -->
+                    </div>
                 </div>
             </div>
         </div>
+
 
 
 
