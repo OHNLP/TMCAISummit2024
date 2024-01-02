@@ -1,2 +1,2 @@
-# Translational AI Submmit 2024
-https://ohnlp.github.io/TranslationalAISummit2024/
+# TMC AI Submmit 2024
+https://ohnlp.github.io/TMCAISummit2024/
