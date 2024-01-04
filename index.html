@@ -42,27 +42,35 @@
         font-size: 18px; /* Adjust to match the Steering Committee text size */
         text-align: left; /* Align text to the left */
     }    
-    /* Add your new styles here */
-        .quote-content li {
-            margin-top: 0; /* Removes top margin from list items */
-            margin-bottom: 0; /* Removes bottom margin from list items */
-            padding-top: 0; /* Removes top padding from list items */
-            padding-bottom: 0; /* Removes bottom padding from list items */
-        }
-        
-        .quote-content > li {
-            margin-bottom: 5px; /* Adds a small space after each list item, adjust as necessary */
-        }
-        
-        .quote-content > li > ul {
-            margin-top: 0; /* Removes top margin from nested lists */
-        }
-        
-        /* Additional styles to reduce space between bullet points and text */
-        .quote-content ul, .quote-content ol {
-            padding-left: 20px; /* Reduces the default padding for lists, adjust as necessary */
-        }
-    </style>
+    /* Style adjustments for list items */
+    .quote-content li,
+    .quote-content ul li,
+    .quote-content ol li {
+        margin-bottom: 0; /* Reduces space below each list item */
+        line-height: 1.2; /* Adjusts the line height for tighter line spacing, change as needed */
+        padding-bottom: 0; /* Ensures no extra padding below list items */
+    }
+
+    /* To target only the first level of list items directly under .quote-content */
+    .quote-content > li {
+        margin-top: 0; /* Removes top margin for the first level of list items */
+    }
+
+    /* To specifically reduce the space after the "1. Real-world Data Analytics" list item */
+    .quote-content > li:first-child {
+        margin-bottom: 5px; /* Adds a little space after the first list item, adjust as needed */
+    }
+
+    /* If the space still doesn't change, it might be due to overriding styles elsewhere, 
+       you can use !important to ensure these styles take precedence */
+    .quote-content > li,
+    .quote-content ul li,
+    .quote-content ol li {
+        margin-bottom: 0 !important; /* Forces this style to take precedence */
+        line-height: 1.2 !important; /* Forces this style to take precedence */
+        padding-bottom: 0 !important; /* Forces this style to take precedence */
+    }
+</style>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
     <link rel="stylesheet" id="contact-form-7-css" href="./styles.css" type="text/css" media="all">
     <link rel="stylesheet" id="NextGEN-css" href="./nggallery.css" type="text/css" media="screen">
