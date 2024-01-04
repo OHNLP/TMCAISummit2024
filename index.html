@@ -43,12 +43,24 @@
         text-align: left; /* Align text to the left */
     }    
     /* Add your new styles here */
-        ol.quote-content > li {
-            margin-bottom: 0px; /* Reduces space after the list item */
-            padding-bottom: 0px; /* Reduces padding after the list item if needed */
+        .quote-content li {
+            margin-top: 0; /* Removes top margin from list items */
+            margin-bottom: 0; /* Removes bottom margin from list items */
+            padding-top: 0; /* Removes top padding from list items */
+            padding-bottom: 0; /* Removes bottom padding from list items */
         }
-        ol.quote-content > li > ul {
-            margin-top: 0px; /* Reduces space before the nested list */
+        
+        .quote-content > li {
+            margin-bottom: 5px; /* Adds a small space after each list item, adjust as necessary */
+        }
+        
+        .quote-content > li > ul {
+            margin-top: 0; /* Removes top margin from nested lists */
+        }
+        
+        /* Additional styles to reduce space between bullet points and text */
+        .quote-content ul, .quote-content ol {
+            padding-left: 20px; /* Reduces the default padding for lists, adjust as necessary */
         }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
