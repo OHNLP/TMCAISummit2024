@@ -49,9 +49,8 @@
         text-align: left; /* Align text to the left */
     }    
     .speaker {
-        display: inline-block; /* Align speakers horizontally */
-        margin: 60px; /* Adjust the space around each speaker */
-        text-align: center; /* Center the text under each image */
+        flex: 0 0 auto; /* This prevents the flex items from growing or shrinking */
+        margin: 0; /* Resetting margins as flexbox will handle the spacing */
     }
     
     .circular-image {
@@ -62,7 +61,12 @@
         object-position: center; /* Adjusted to center to ensure images are centered */
         margin-bottom: 10px; /* Space between the image and the text */
     }
-    
+    .speakers-container {
+        display: flex;
+        justify-content: space-between; /* This will space out the items as requested */
+        align-items: center;
+        text-align: center;
+    }
     .speaker-info-container {
         /* If additional styling is needed for the container holding the text */
     }
@@ -257,47 +261,41 @@
                 <div class="widget-header">
                     <h2 class="widget-heading">Panel Discussion</h2>
                     <p class="panel-topic" style="font-size: 1.5em;">Topic: Opportunities and Challenges of Generative AI in Real-world Healthcare Applications</p>
+                </div>
+                
+                <!-- Panelists' Photos and Info using Flexbox -->
+                <div class="speakers-container">
                     
-                    <!-- Panelists' Photos and Info -->
-                    <div class="speakers-container" style="text-align: center;">
-                        
-                        <!-- Xia Hu -->
-                        <div class="speaker" style="display: inline-block; margin: 10px;">
-                            <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/BenHu.jpg" alt="Xia Hu" class="circular-image">
-                            <div class="speaker-info">                                
-                                <h3><strong>Xia Hu</strong></h3>
-                                <h4>PhD, Rice University</h4>
-                            </div>
+                    <!-- Xia Hu - Align left -->
+                    <div class="speaker">
+                        <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/BenHu.jpg" alt="Xia Hu" class="circular-image">
+                        <div class="speaker-info">                                
+                            <h3><strong>Xia Hu</strong></h3>
+                            <h4>PhD, Rice University</h4>
                         </div>
-                        <!-- End Xia Hu -->
-                        
-                        <!-- Xiaoqian Jiang -->
-                        <div class="speaker" style="display: inline-block; margin: 10px;">
-                            <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/xiaoqian-jiang.jpg" alt="Xiaoqian Jiang" class="circular-image">
-                            <div class="speaker-info">
-                                <h3><strong>Xiaoqian Jiang</strong></h3>
-                                <h4>PhD, UTHealth</h4>
-                            </div>
-                        </div>
-                        <!-- End Xiaoqian Jiang -->
-                        
-                        <!-- Tang Lu -->
-                        <div class="speaker" style="display: inline-block; margin: 10px;">
-                            <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/LuTang.jpeg" alt="Tang Lu" class="circular-image">
-                            <div class="speaker-info">
-                                <h3><strong>Tang Lu</strong></h3>
-                                <h4>PhD, Texas A&M University</h4>
-                            </div>
-                        </div>
-                        <!-- End Tang Lu -->
-                        
                     </div>
-                    <!-- End Panelists' Photos and Info -->
+                    
+                    <!-- Xiaoqian Jiang - Center (will be centered because of flexbox 'justify-content: space-between') -->
+                    <div class="speaker">
+                        <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/xiaoqian-jiang.jpg" alt="Xiaoqian Jiang" class="circular-image">
+                        <div class="speaker-info">
+                            <h3><strong>Xiaoqian Jiang</strong></h3>
+                            <h4>PhD, UTHealth</h4>
+                        </div>
+                    </div>
+                    
+                    <!-- Tang Lu - Align right -->
+                    <div class="speaker">
+                        <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/LuTang.jpeg" alt="Tang Lu" class="circular-image">
+                        <div class="speaker-info">
+                            <h3><strong>Tang Lu</strong></h3>
+                            <h4>PhD, Texas A&M University</h4>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
         </div>
-
 
 
 
