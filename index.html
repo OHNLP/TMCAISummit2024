@@ -48,11 +48,7 @@
         font-size: 18px; /* Adjust to match the Steering Committee text size */
         text-align: left; /* Align text to the left */
     }    
-    .speaker {
-        flex: 0 0 auto; /* This prevents the flex items from growing or shrinking */
-        margin: 0; /* Resetting margins as flexbox will handle the spacing */
-    }
-    
+       
     .circular-image {
         width: 200px;
         height: 200px;
@@ -61,11 +57,25 @@
         object-position: center; /* Adjusted to center to ensure images are centered */
         margin-bottom: 10px; /* Space between the image and the text */
     }
+    /* This container will align the speakers horizontally */
     .speakers-container {
         display: flex;
-        justify-content: space-between; /* This will space out the items as requested */
+        justify-content: space-around; /* Adjusts spacing around items */
         align-items: center;
         text-align: center;
+        margin-left: auto; /* Aligns with the left edge of the parent container */
+        margin-right: auto; /* Aligns with the right edge of the parent container */
+        max-width: 1200px; /* Adjust the max-width to match the width of your header */
+        width: 100%;
+    }
+
+    /* Adjustments to speaker elements */
+    .speaker {
+        flex: 1; /* Allows equal spacing and takes up equal space */
+        margin: 0 20px; /* Adds space between speaker elements */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .speaker-info-container {
         /* If additional styling is needed for the container holding the text */
@@ -255,15 +265,12 @@
         </div>
         
 
-        <!-- Panel Discussion Section -->
         <div id="panel-discussion" class="widget widget-speakers">
             <div class="container">
                 <div class="widget-header">
                     <h2 class="widget-heading">Panel Discussion</h2>
                     <p class="panel-topic" style="font-size: 1.5em;">Topic: Opportunities and Challenges of Generative AI in Real-world Healthcare Applications</p>
                 </div>
-                
-                <!-- Panelists' Photos and Info using Flexbox -->
                 <div class="speakers-container">
                     
                     <!-- Xia Hu - Align left -->
