@@ -71,7 +71,7 @@
     /* This container will align the speakers horizontally */
     .speakers-container {
         display: flex;
-        justify-content: flex-start; /* Adjusts spacing around items */
+        justify-content: space-between; /* Adjust this to manage space between speaker photos */
         align-items: center;
         text-align: center;
         margin-left: auto; /* Aligns with the left edge of the parent container */
@@ -88,6 +88,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center; /* Center align text for each speaker info */
+        margin-right: 15px; /* Add some margin to the right of each speaker container */
     }
     .speaker-info-container {
         /* If additional styling is needed for the container holding the text */
@@ -98,7 +99,7 @@
         border-radius: 50%;
         object-fit: cover;
         object-position: center 10%; /* Adjust this to ensure hair is visible */
-        margin-right: 30px;
+        margin-right: 10px;
         margin-bottom: 10px; /* Space between the image and the text below */
     }
     </style>
