@@ -49,21 +49,18 @@
         text-align: left; /* Align text to the left */
     }    
     .speaker {
-        text-align: center; /* Centers the content */
-        margin-left: auto;
-        margin-right: auto;
+        display: inline-block; /* Align speakers horizontally */
+        margin: 10px; /* Adjust the space around each speaker */
+        text-align: center; /* Center the text under each image */
     }
     
-    .speaker-photo {
+    .circular-image {
         width: 200px;
         height: 200px;
         border-radius: 50%;
         object-fit: cover;
-        object-position: top;
-        display: block; /* Makes the image a block to take up the full line */
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10px; /* Adds some space between the image and the text below */
+        object-position: center; /* Adjusted to center to ensure images are centered */
+        margin-bottom: 10px; /* Space between the image and the text */
     }
     
     .speaker-info-container {
@@ -265,7 +262,7 @@
                     <div class="speakers-container" style="text-align: center;">
                         
                         <!-- Xia Hu -->
-                        <div class="speaker" style="margin-bottom: 20px; display: inline-block;">
+                        <div class="speaker" style="display: inline-block; margin: 10px;">
                             <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/BenHu.jpg" alt="Xia Hu" class="circular-image">
                             <div class="speaker-info">                                
                                 <h3><strong>Xia Hu</strong></h3>
@@ -275,7 +272,7 @@
                         <!-- End Xia Hu -->
                         
                         <!-- Xiaoqian Jiang -->
-                        <div class="speaker" style="margin-bottom: 20px; display: inline-block;">
+                        <div class="speaker" style="display: inline-block; margin: 10px;">
                             <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/xiaoqian-jiang.jpg" alt="Xiaoqian Jiang" class="circular-image">
                             <div class="speaker-info">
                                 <h3><strong>Xiaoqian Jiang</strong></h3>
@@ -285,7 +282,7 @@
                         <!-- End Xiaoqian Jiang -->
                         
                         <!-- Tang Lu -->
-                        <div class="speaker" style="margin-bottom: 20px; display: inline-block;">
+                        <div class="speaker" style="display: inline-block; margin: 10px;">
                             <img src="https://raw.githubusercontent.com/OHNLP/TMCAISummit2024/main/LuTang.jpeg" alt="Tang Lu" class="circular-image">
                             <div class="speaker-info">
                                 <h3><strong>Tang Lu</strong></h3>
@@ -300,6 +297,7 @@
                 </div>
             </div>
         </div>
+
 
 
 
