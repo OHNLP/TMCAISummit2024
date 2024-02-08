@@ -171,6 +171,22 @@
     #invited-speakers .widget-header {
         margin-top: 20px; /* Adjust this value as needed */
     }
+    @media (max-width: 768px) {
+    .widget-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sponsor {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .widget-heading {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
 
     </style>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
@@ -254,24 +270,21 @@
         
 <!-- Rest of the HTML content continues here... -->
         <!-- Sponsors Section -->
-        <div id="sponsors" class="widget widget-sponsors" style="text-align: right;">
+        <div id="sponsors" class="widget widget-sponsors">
             <div class="container">
-                <div class="widget-header">
-                    <h2 class="widget-heading">Sponsors</h2>
-                    <div class="sponsors-container" style="justify-content: flex-end;">
-                        <!-- Existing sponsors go here... -->
-                        <!-- Triomics Sponsorship -->
-                        <div class="sponsor" style="display: inline-block; margin-top:20px; text-align: center;">
-                            <img src="https://github.com/OHNLP/TMCAISummit2024/blob/main/triomics.jpg?raw=true" alt="Triomics Logo" style="width:200px;">
-                            <div>
-                                <h3><strong>Triomics</strong></h3>
-                                <p>An AI-driven healthtech verticalized in oncology. Leveraging OncoLLM™, a powerful GenAI model for processing patient data and oncology concepts at scale.</p>
-                            </div>
+                <div class="widget-header" style="display: flex; justify-content: space-between; align-items: center;">
+                    <h2 class="widget-heading" style="font-size: 24px; margin: 0; color: #ffa500;">Sponsors</h2>
+                    <div class="sponsor" style="text-align: right;">
+                        <img src="path_to_triomics_logo.png" alt="Triomics Logo" style="max-width: 200px; margin-bottom: 10px;">
+                        <div>
+                            <h3 style="margin: 0; color: #333;"><strong>Triomics</strong></h3>
+                            <p style="font-size: 14px; color: #666;">An AI-driven healthtech verticalized in oncology. Leveraging OncoLLM™, a powerful GenAI model for processing patient data and oncology concepts at scale.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
 
         <!-- Overview -->
