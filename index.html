@@ -172,6 +172,39 @@
         margin-top: 20px; /* Adjust this value as needed */
     }
 
+    /* Sponsor Section Styles */
+    #sponsors .widget-heading {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    
+    .sponsors-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .sponsor {
+        text-align: center;
+        max-width: 250px;
+    }
+    
+    .sponsor img.sponsor-logo {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .sponsor p {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.4;
+    }
+    
 
     </style>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
@@ -548,6 +581,30 @@
                 </div>
             </div>
         </div>
+
+        <!-- Sponsor Section -->
+        <div id="sponsors" class="widget widget-sponsors">
+            <div class="container">
+                <div class="widget-header">
+                    <h2 class="widget-heading">Sponsors</h2>
+                </div>
+                <div class="widget-body">
+                    <div class="sponsor-level">
+                        <h3>OUR SPONSORS</h3>
+                        <div class="sponsors-container">
+                            <!-- Triomics Sponsor -->
+                            <div class="sponsor">
+                                <img src="path_to_your_image/triomics.jpg" alt="Triomics Logo" class="sponsor-logo">
+                                <p>Triomics is an AI-driven healthtech verticalized in oncology which addresses key pain points in cancer research using OncoLLM™, a powerful GenAI model for processing patient data and oncology concepts at scale.</p>
+                            </div>
+                            <!-- You can add more sponsors here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Sponsor Section -->
+
     </main>
     <!-- CONTACT US -->
     <footer id="contact" class="footer">
