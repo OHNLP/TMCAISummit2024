@@ -206,8 +206,7 @@
         margin: 0 auto;
     }
     
-    .sponsor img {
-        width: 100%;
+    .sponsor img {        
         height: auto;
         margin-bottom: 10px;
     }
@@ -217,6 +216,16 @@
         color: #666;
     }
     
+    /* Specific styles for the Triomics logo to make it smaller */
+    .sponsor-triomics img {
+        max-width: 150px; /* Adjust the size to make the logo smaller */
+    }
+    
+    /* Specific styles for the K2I logo to make it larger */
+    .sponsor-k2i img {
+        max-width: 300px; /* Adjust the size to make the logo larger */
+    }
+        
     /* You may need to add media queries to ensure responsiveness */
     @media (max-width: 768px) {
         .sponsor-logos {
@@ -604,26 +613,26 @@
 
         <!-- Sponsors Section -->
         <div class="sponsors-section">
-            <h2 class="sponsors-title">Sponsors</h2>
             <p class="sponsor-thank-you">We thank these organizations for their support. The content is solely managed by the organizers and may not represent the views of these organizations.</p>
+            <h2 class="sponsors-title">Sponsors</h2>
             <div class="sponsor-levels">
-                
                 <!-- Add Sponsors -->
                 <div class="silver-sponsors">
-                        <div class="sponsor-logos">
+                    <div class="sponsor-logos">
                         <!-- Triomics Sponsor Logo -->
-                        <div class="sponsor">
-                            <img src="https://github.com/OHNLP/TMCAISummit2024/blob/main/triomics.jpg?raw=true" alt="Triomics">
+                        <div class="sponsor sponsor-triomics">
+                            <img src="https://github.com/OHNLP/TMCAISummit2024/blob/main/triomics.jpg?raw=true" alt="Triomics Logo">
                         </div>
                         <!-- K2I Sponsor Logo -->
-                        <div class="sponsor">
-                            <img src="https://github.com/OHNLP/TMCAISummit2024/blob/main/K2I.jpg?raw=true" alt="K2I@Rice">
+                        <div class="sponsor sponsor-k2i">
+                            <img src="https://github.com/OHNLP/TMCAISummit2024/blob/main/K2I.jpg?raw=true" alt="K2I Logo">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- End of Sponsors Section -->
+
 
 
 
