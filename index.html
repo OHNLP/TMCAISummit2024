@@ -172,19 +172,14 @@
         margin-top: 20px; /* Adjust this value as needed */
     }
     @media (max-width: 768px) {
-    .widget-header {
+    .container {
         flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .sponsor {
         text-align: center;
-        margin-top: 20px;
     }
 
-    .widget-heading {
-        text-align: left;
-        margin-bottom: 20px;
+    .sponsor-logo {
+        margin-top: 20px;
+        text-align: center;
     }
 }
 
@@ -271,19 +266,19 @@
 <!-- Rest of the HTML content continues here... -->
         <!-- Sponsors Section -->
         <div id="sponsors" class="widget widget-sponsors">
-            <div class="container">
-                <div class="widget-header" style="display: flex; justify-content: space-between; align-items: center;">
-                    <h2 class="widget-heading" style="font-size: 24px; margin: 0; color: #ffa500;">Sponsors</h2>
-                    <div class="sponsor" style="text-align: right;">
-                        <img src="path_to_triomics_logo.png" alt="Triomics Logo" style="max-width: 200px; margin-bottom: 10px;">
-                        <div>
-                            <h3 style="margin: 0; color: #333;"><strong>Triomics</strong></h3>
-                            <p style="font-size: 14px; color: #666;">An AI-driven healthtech verticalized in oncology. Leveraging OncoLLM™, a powerful GenAI model for processing patient data and oncology concepts at scale.</p>
-                        </div>
-                    </div>
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding-top: 20px; padding-bottom: 20px;">
+                <div class="sponsor-info">
+                    <h1 style="font-size: 2.5em; font-weight: bold; margin: 0;">AMIA 2024 Informatics Summit</h1>
+                    <h2 style="font-size: 1.5em; margin: 0;">Registration</h2>
+                    <p style="margin: 0;">Full registration fees for members, non-members, and students cover all events except for designated affiliate events and selected special events. Please note the AMIA Conference Policies.</p>
+                </div>
+                <div class="sponsor-logo" style="text-align: right;">
+                    <img src="path_to_triomics_logo.png" alt="Triomics Logo" style="max-width: 200px; margin-left: 20px;">
+                    <p style="font-size: 0.75em; margin-top: 5px; color: #707070;">Title Sponsor</p>
                 </div>
             </div>
         </div>
+
 
 
 
