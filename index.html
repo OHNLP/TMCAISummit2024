@@ -172,29 +172,42 @@
         margin-top: 20px; /* Adjust this value as needed */
     }
 
-    /* Sponsor Section Styles */
-    #sponsors .widget-heading {
+    /* Sponsors Section Styles */
+    .sponsors-section {
         text-align: center;
-        font-size: 24px;
-        margin-bottom: 30px;
+        padding: 50px 0;
     }
     
-    .sponsors-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
+    .sponsors-title {
+        font-size: 32px;
         margin-bottom: 20px;
     }
     
-    .sponsor {
-        text-align: center;
-        max-width: 250px;
+    .sponsor-levels > div {
+        margin-bottom: 40px;
     }
     
-    .sponsor img.sponsor-logo {
-        max-width: 100%;
+    .sponsor-levels h3 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .sponsor-logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .sponsor {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    .sponsor img {
+        width: 100%;
         height: auto;
         margin-bottom: 10px;
     }
@@ -202,8 +215,15 @@
     .sponsor p {
         font-size: 14px;
         color: #666;
-        line-height: 1.4;
     }
+    
+    /* You may need to add media queries to ensure responsiveness */
+    @media (max-width: 768px) {
+        .sponsor-logos {
+            flex-direction: column;
+        }
+    }
+
     
 
     </style>
@@ -582,27 +602,36 @@
             </div>
         </div>
 
-        <!-- Sponsor Section -->
-        <div id="sponsors" class="widget widget-sponsors">
-            <div class="container">
-                <div class="widget-header">
-                    <h2 class="widget-heading">Sponsors</h2>
-                </div>
-                <div class="widget-body">
-                    <div class="sponsor-level">
-                        <h3>OUR SPONSORS</h3>
-                        <div class="sponsors-container">
-                            <!-- Triomics Sponsor -->
-                            <div class="sponsor">
-                                <img src="path_to_your_image/triomics.jpg" alt="Triomics" class="sponsor-logo">
-                            </div>
-                            <!-- You can add more sponsors here -->
+        <!-- Sponsors Section -->
+        <div class="sponsors-section">
+            <h2 class="sponsors-title">Sponsors</h2>
+            <div class="sponsor-levels">
+                <!-- Existing Silver Sponsor -->
+                <!-- ... existing sponsors ... -->
+        
+                <!-- Existing Exhibition Sponsor -->
+                <!-- ... existing exhibition sponsors ... -->
+        
+                <!-- Add new Silver Sponsors -->
+                <div class="silver-sponsors">
+                    <h3>NEW SILVER SPONSORS</h3>
+                    <div class="sponsor-logos">
+                        <!-- Triomics Sponsor Logo -->
+                        <div class="sponsor">
+                            <img src="https://github.com/OHNLP/TMCAISummit2024/blob/main/triomics.jpg?raw=true" alt="Triomics Logo">
+                            <p>Triomics, an AI-driven healthtech verticalized in oncology which addresses key pain points in cancer research using OncoLLM™, a powerful GenAI model for processing patient data and oncology concepts at scale.</p>
+                        </div>
+                        <!-- K2I Sponsor Logo -->
+                        <div class="sponsor">
+                            <img src="https://github.com/OHNLP/TMCAISummit2024/blob/main/K2I.png?raw=true" alt="K2I Logo">
+                            <p>Knowledge to Innovation (K2I) is dedicated to advancing the frontiers of knowledge and nurturing technological innovation.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Sponsor Section -->
+        <!-- End of Sponsors Section -->
+
 
     </main>
     <!-- CONTACT US -->
