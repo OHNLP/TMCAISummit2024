@@ -197,18 +197,21 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 5px;
+        gap: 30px;
         flex-wrap: wrap;
     }
     
     .sponsor {
-        max-width: 250px;
         margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
     
     .sponsor img {        
+        max-width: 100%; /* Responsive image width */
         height: auto;
-        margin-bottom: 10px;
     }
     
     .sponsor p {
@@ -225,7 +228,6 @@
     
     .sponsor-triomics img {
         max-width: 50px; /* Adjust the size to make the logo smaller */
-        height: auto;
     }
     
     .sponsor-name {
@@ -237,7 +239,6 @@
     /* Specific styles for the K2I logo to make it larger */
     .sponsor-k2i img {
         max-width: 360px; /* Adjust the size to make the logo larger */
-        height: auto;
     }
         
     /* You may need to add media queries to ensure responsiveness */
@@ -250,7 +251,6 @@
     /* Specific styles for the SBMI logo */
     .sponsor-sbmi img {
         max-width: 120px; /* Adjust if you need a different size */
-        height: auto;
     }
 
     </style>
@@ -634,7 +634,6 @@
             <p class="sponsor-thank-you">We thank these organizations for their support. The content is solely managed by the organizers and may not represent the views of these organizations.</p>
             <h2 class="sponsors-title">Sponsors</h2>
             <div class="sponsor-levels">
-                <!-- Add Sponsors -->
                 <div class="silver-sponsors">
                     <div class="sponsor-logos">
                         <!-- Triomics Sponsor Logo and Name -->
@@ -644,7 +643,7 @@
                         </div>
                         <!-- SBMI Sponsor Logo -->
                         <div class="sponsor sponsor-sbmi">
-                            <img src="https://github.com/OHNLP/TMCAISummit2024/blob/main/uth.png?raw=true" alt="SBMI Logo">
+                            <img src="https://github.com/OHNLP/TMCAISummit2024/blob/main/SBMI.png?raw=true" alt="SBMI Logo">
                         </div>
                         <!-- K2I Sponsor Logo -->
                         <div class="sponsor sponsor-k2i">
@@ -655,6 +654,7 @@
             </div>
         </div>
         <!-- End of Sponsors Section -->
+
 
 
 
