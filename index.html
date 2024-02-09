@@ -195,9 +195,9 @@
     
     .sponsor-logos {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        gap: 10px;
+        gap: 30px;
         flex-wrap: wrap;
     }
     
@@ -230,6 +230,9 @@
     
     .sponsor-triomics img {
         max-width: 50px; /* Adjust the size to make the logo smaller */
+        width: auto; /* Adjust width as necessary */
+        height: 100px; /* Adjust height to align with the title */
+        margin-bottom: 0; /* Remove bottom margin if it's not needed */
     }
     
     .sponsor-name {
@@ -241,18 +244,27 @@
     /* Specific styles for the K2I logo to make it larger */
     .sponsor-k2i img {
         max-width: 360px; /* Adjust the size to make the logo larger */
+        width: auto; /* Adjust width as necessary */
+        height: 100px; /* Adjust height to align with the title */
+        margin-bottom: 0; /* Remove bottom margin if it's not needed */
     }
         
     /* You may need to add media queries to ensure responsiveness */
     @media (max-width: 768px) {
         .sponsor-logos {
             flex-direction: column;
+            gap: 20px; /* Smaller gap for mobile */
         }
     }
 
     /* Specific styles for the SBMI logo */
     .sponsor-sbmi img {
         max-width: 120px; /* Adjust if you need a different size */
+        width: auto; /* Adjust width as necessary */
+        height: 100px; /* Adjust height to align with the title */
+        margin-bottom: 0; /* Remove bottom margin if it's not needed */
+        margin-top: 20px; /* Adjust this value as needed to align with 'Sponsors' */
+
     }
 
     </style>
