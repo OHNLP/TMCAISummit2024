@@ -213,19 +213,35 @@
         height: auto; /* This will maintain the aspect ratio of the image */
     }
         
-    /* Responsive design adjustments */
+   /* Add the new media query CSS here */
     @media only screen and (max-width: 600px) {
-        .navbar-menu a, .contact-a {
-            font-size: 14px; /* Increase touch target size */
-            padding: 12px 15px;
+        .navbar-menu a {
+            font-size: 10px; /* Smaller font size */
+            padding: 8px 10px; /* Adjust padding */
         }
-        .widget-heading, .ai_sponsor-title, .submission-title {
-            font-size: 16px; /* Adjust font sizes for readability on small screens */
+    
+        .widget-heading {
+            font-size: 18px; /* Smaller heading for widgets */
         }
+    
+        .speakers-container {
+            flex-direction: column; /* Stack speaker photos vertically */
+            padding-left: 0; /* Remove left padding */
+        }
+    
+        .speaker-photo {
+            width: 150px; /* Smaller speaker photos */
+            height: 150px; /* Keep aspect ratio */
+        }
+    
         .ai_sponsor img {
-            max-width: 100px; /* Ensure sponsor logos are fully visible */
+            max-width: 100px; /* Smaller sponsor logos */
         }
-        /* Add more responsive adjustments as needed */
+    
+        /* Adjusting the layout for smaller screens */
+        .container {
+            padding: 0 5%; /* Add padding to the container */
+        }
     }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
