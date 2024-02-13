@@ -235,12 +235,14 @@
         }
     
         .ai_sponsor img {
-            max-width: 100px; /* Smaller sponsor logos */
+            max-width: 100%; /* Ensure it's not wider than its container */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: contain; /* Ensures the logo fits within its bounds without being cut off */
         }
         
         .circular-image {
-        width: 150px; /* Adjusted width */
-        height: 150px; /* Adjusted height to match the width */
+        width: 200px; /* Adjusted width */
+        height: 200px; /* Adjusted height to match the width */
         border-radius: 50%; /* This ensures the image remains round */
         object-fit: cover; /* Keeps the aspect ratio of the image */
     }
