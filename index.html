@@ -195,65 +195,20 @@
     
     .sponsor-logos {
         display: flex;
-        justify-content: center;
+        justify-content: center; /* This will center the child elements */
         align-items: center;
-        gap: 10px;
-        flex-wrap: wrap;
     }
     
     .sponsor {
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        margin: 0 auto; /* This will center the logo */
+        display: block; /* Change this to block to center the image if flex properties are not working as expected */
     }
     
-    .sponsor img {        
+    .sponsor img {
         max-width: 100%; /* Responsive image width */
         height: auto;
     }
-    
-    .sponsor p {
-        font-size: 14px;
-        color: #666;
-    }
-    
-    /* Specific styles for the Triomics logo to make it smaller and move it to the right */
-    .sponsor-triomics {
-        display: flex;
-        align-items: center;
-        gap: 10px; /* Adjust the space between the logo and the text */
-        margin-right: 20px; /* This will push the Triomics logo to the right */
-    }
 
-    
-    .sponsor-triomics img {
-        max-width: 50px; /* Adjust the size to make the logo smaller */
-    }
-    
-    .sponsor-name {
-        font-size: 50px; /* Adjust as needed */
-        font-weight: bold; /* Makes the sponsor name bold */
-        /* Additional styles as needed */
-    }
-    
-    /* Specific styles for the K2I logo to make it larger */
-    .sponsor-k2i img {
-        max-width: 360px; /* Adjust the size to make the logo larger */
-    }
-        
-    /* You may need to add media queries to ensure responsiveness */
-    @media (max-width: 768px) {
-        .sponsor-logos {
-            flex-direction: column;
-        }
-    }
-
-    /* Specific styles for the SBMI logo */
-    .sponsor-sbmi img {
-        max-width: 120px; /* Adjust if you need a different size */
-    }
 
     </style>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
@@ -638,30 +593,15 @@
             <div class="sponsor-levels">
                 <div class="silver-sponsors">
                     <div class="sponsor-logos">
-                        <!-- Triomics Sponsor Logo and Name -->
-                        <div class="sponsor sponsor-triomics">
-                            <img src="https://github.com/OHNLP/TMCAISummit2024/blob/main/triomics.jpg?raw=true" alt="Triomics Logo">
-                            <div class="sponsor-name">Triomics</div>
-                        </div>
-                        <!-- SBMI Sponsor Logo -->
-                        <div class="sponsor sponsor-sbmi">
-                            <img src="https://github.com/OHNLP/TMCAISummit2024/blob/main/uth.png?raw=true" alt="SBMI Logo">
-                        </div>
-                        <!-- K2I Sponsor Logo -->
-                        <div class="sponsor sponsor-k2i">
-                            <img src="https://github.com/OHNLP/TMCAISummit2024/blob/main/K2I.jpg?raw=true" alt="K2I Logo">
-                        </div>
+                        <!-- Single Sponsor Logo -->
+                        <div class="sponsor">
+                            <img src="https://github.com/OHNLP/TMCAISummit2024/blob/main/sponsor.png?raw=true" alt="Sponsor Logo">
+                        </div>                        
                     </div>
                 </div>
             </div>
         </div>
         <!-- End of Sponsors Section -->
-
-
-
-
-
-
 
     </main>
     <!-- CONTACT US -->
