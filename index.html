@@ -60,8 +60,8 @@
     }
 
     .circular-image {
-        width: 200px; /* Width of the image */
-        height: 200px; /* Height of the image */
+        width: 150px; /* Width of the image */
+        height: 150px; /* Height of the image */
         border-radius: 50%; /* Makes the image round */
         object-fit: cover; /* This will cover the area of the container without stretching the image */
         object-position: center 0.00006%; /* Adjust this value if you need to move the image up or down to show the hair */
@@ -209,12 +209,26 @@
     }
     
     .ai_sponsor img {
-        max-width: 888px; /* Adjusted max-width for a larger logo */
+        max-width: 100%; /* Ensures the logo fits within its container */
         height: auto; /* This will maintain the aspect ratio of the image */
     }
+    
+    /* Media queries for mobile devices */
+    @media only screen and (max-width: 767px) {
+        /* Adjustments for smaller screens (mainly smartphones in portrait and landscape mode) */
+        .circular-image {
+            width: 100px; /* Smaller size for mobile devices */
+            height: 100px; /* Maintain aspect ratio */
+        }
+    
+        .ai_sponsor img {
+            max-width: 200px; /* Adjust the logo size for smaller screens */
+            margin: 0 auto; /* Center the logo if necessary */
+        }
+    }    
         
    /* Add the new media query CSS here */
-    @media only screen and (max-width: 600px) {
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
         .navbar-menu a {
             font-size: 10px; /* Smaller font size */
             padding: 8px 10px; /* Adjust padding */
@@ -235,15 +249,16 @@
         }
     
         .ai_sponsor img {
-            max-width: 100px; /* Smaller sponsor logos */
+            max-width: 250px; /* Adjust the logo size for medium screens */
+            margin: 0 auto; /* Center the logo if necessary */
         }
         
         .circular-image {
-        width: 150px; /* Adjusted width */
-        height: 150px; /* Adjusted height to match the width */
-        border-radius: 50%; /* This ensures the image remains round */
-        object-fit: cover; /* Keeps the aspect ratio of the image */
-    }
+            width: 120px; /* Adjusted width */
+            height: 120px; /* Adjusted height to match the width */
+            border-radius: 50%; /* This ensures the image remains round */
+            object-fit: cover; /* Keeps the aspect ratio of the image */
+        }
     
         /* Adjusting the layout for smaller screens */
         .container {
