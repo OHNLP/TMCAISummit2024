@@ -251,39 +251,43 @@
             margin: 10px auto; /* Center the logo and provide some spacing */
         }
 
-        /* Center-align the container for the registration and program links */
-        .widget-description .container .col-md-8 {
-            text-align: center; /* Center-align the container */
+        /* Ensuring the container is centered on mobile screens */
+        .widget-description .container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     
-        /* Adjust the Registration button and program link for mobile */
-        .widget-description .container .col-md-8 > div,
-        .widget-description .container .col-md-8 > div > a,
-        .widget-description .container .col-md-8 > div + div,
-        .widget-description .container .col-md-8 > div + div > a {
-            width: 90%; /* Match the width for both elements */
-            max-width: 300px; /* Adjust maximum width as necessary */
-            margin: 10px auto; /* Center the elements in the container */
-            display: block; /* Display as block elements */
-        }
-    
-        /* Specific styles for the Registration button to ensure size and alignment */
-        .widget-description .container .col-md-8 > div > a {
-            font-size: 1em; /* Adjust font size for consistency */
-            padding: 10px 0; /* Add padding for the button */
+        /* Styling for the 'Registration' button to match the 'Program' link */
+        .widget-description .container a[href*="google.com"] {
+            font-size: 1em; /* Adjust the font size */
             background-color: #006791; /* Button background color */
-            color: #fff; /* Button text color */
-            border-radius: 4px; /* Rounded corners for the button */
-            text-decoration: none; /* Remove underline from links */
-            display: inline-block; /* Inline-block for proper width handling */
+            color: white; /* Button text color */
+            padding: 10px 20px; /* Button padding */
+            border-radius: 5px; /* Rounded corners */
+            display: inline-block; /* Align with other inline elements */
+            margin: 10px 0; /* Margin top and bottom */
+            width: auto; /* Auto width based on content */
+            text-align: center;
         }
     
-        /* Style adjustments for the program link to match the button */
-        .widget-description .container .col-md-8 > div + div > a {
-            font-size: 1em; /* Adjust font size for consistency */
+        /* Styling for the 'Program' link to match the 'Registration' button */
+        .widget-description .container a[href$=".pdf"] {
+            font-size: 1em; /* Adjust the font size */
             color: blue; /* Link color */
-            text-decoration: underline; /* Underline for the link */
-            display: inline-block; /* Inline-block for proper width handling */
+            text-decoration: underline; /* Underline text */
+            display: inline-block; /* Align with other inline elements */
+            margin: 10px 0; /* Margin top and bottom */
+            width: auto; /* Auto width based on content */
+            text-align: center;
+        }
+    
+        /* Corrects the button and link stacking on mobile */
+        .widget-description .container > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }    
         
