@@ -259,37 +259,35 @@
             align-items: center;
         }
     
-        /* Ensuring both the registration and program links are full width and aligned */
-        .widget-description .container > div,
-        .widget-description .container > a {
-            width: 100%;
-            text-align: center;
-        }
-    
-        /* Styling for the 'Registration' button to ensure full width */
+        /* Styling for the 'Registration' button to match the 'Program' link */
         .widget-description .container a[href*="google.com"] {
             font-size: 1em; /* Adjust the font size */
             background-color: #006791; /* Button background color */
             color: white; /* Button text color */
             padding: 10px 20px; /* Button padding */
             border-radius: 5px; /* Rounded corners */
-            display: block; /* Make the element block to fill width */
-            margin: 10px auto; /* Center the button */
-            text-decoration: none;
+            display: inline-block; /* Align with other inline elements */
+            margin: 10px 0; /* Margin top and bottom */
+            width: auto; /* Auto width based on content */
+            text-align: center;
         }
     
-        /* Styling for the 'Program' link to ensure full width */
+        /* Styling for the 'Program' link to match the 'Registration' button */
         .widget-description .container a[href$=".pdf"] {
             font-size: 1em; /* Adjust the font size */
             color: blue; /* Link color */
             text-decoration: underline; /* Underline text */
-            display: block; /* Make the element block to fill width */
-            margin: 10px auto; /* Center the link */
+            display: inline-block; /* Align with other inline elements */
+            margin: 10px 0; /* Margin top and bottom */
+            width: auto; /* Auto width based on content */
+            text-align: center;
         }
     
-        /* Additional styles for consistent spacing */
+        /* Corrects the button and link stacking on mobile */
         .widget-description .container > div {
-            margin-bottom: 20px; /* Space below the registration button */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }    
         
