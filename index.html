@@ -259,11 +259,12 @@
         /* Adjust the Registration button and program link for mobile */
         .widget-description .container .col-md-8 > div,
         .widget-description .container .col-md-8 > div > a,
-        .widget-description .container .col-md-8 > div + div {
-            width: 100%; /* Use the full width for mobile */
-            margin: 10px 0; /* Adjust spacing around the elements */
+        .widget-description .container .col-md-8 > div + div,
+        .widget-description .container .col-md-8 > div + div > a {
             display: block; /* Ensure elements are block-level for correct spacing */
             text-align: center; /* Center-align text and elements */
+            margin: 10px auto; /* Adjust spacing around the elements and auto for horizontal margin */
+            font-size: 18px; /* Adjust font size as necessary */
         }
     
         /* Specific styles for the Registration button */
@@ -273,15 +274,17 @@
             color: #fff; /* Button text color */
             border-radius: 4px; /* Rounded corners for the button */
             text-decoration: none; /* Remove underline from the link */
-            display: inline-block; /* Make the link behave like a block for padding and centering */
-            font-size: 18px; /* Adjust font size as necessary */
+            font-family: Ubuntu, sans-serif; /* Optional: Set font family for consistency */
+            width: 80%; /* Set a specific width */
+            max-width: 300px; /* Optional: Set a max-width if needed */
         }
     
         /* Style adjustments for the program link for consistency */
         .widget-description .container .col-md-8 > div + div > a {
-            font-size: 18px; /* Match font size with the Registration button */
             color: blue; /* Keep the link color if needed */
             text-decoration: underline; /* Underline for link indication */
+            width: 80%; /* Set a specific width to match the Registration button */
+            max-width: 300px; /* Optional: Set a max-width if needed */
         }
     }    
         
