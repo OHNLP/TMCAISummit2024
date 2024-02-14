@@ -209,8 +209,10 @@
     }
     
     .ai_sponsor img {
-        max-width: 100%; /* Ensures the logo fits within its container */
+        max-width: 60%; /* Ensures the logo fits within its container */
         height: auto; /* This will maintain the aspect ratio of the image */
+        object-fit: contain; /* Ensure the logo fits within its box without being cut off */
+        margin: 20px auto; /* Center the logo vertically and horizontally in its container */
     }
     
     /* Media queries for mobile devices */
