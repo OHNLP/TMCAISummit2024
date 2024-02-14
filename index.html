@@ -60,8 +60,8 @@
     }
 
     .circular-image {
-        width: 200px; /* Width of the image */
-        height: 200px; /* Height of the image */
+        width: 150px; /* Width of the image */
+        height: 150px; /* Height of the image */
         border-radius: 50%; /* Makes the image round */
         object-fit: cover; /* This will cover the area of the container without stretching the image */
         object-position: center 0.00006%; /* Adjust this value if you need to move the image up or down to show the hair */
@@ -210,12 +210,13 @@
     }
     
     .ai_sponsor img {
-        max-width: 888px; /* Adjusted max-width for a larger logo */
+        max-width: 100%; /* Allow the logo to scale based on its container's width */
         height: auto; /* This will maintain the aspect ratio of the image */
+        object-fit: contain; /* Ensure the full logo is visible */
     }
         
    /* Add the new media query CSS here */
-    @media only screen and (max-width: 600px) {
+    @media only screen and (orientation: landscape) {
         .navbar-menu a {
             font-size: 10px; /* Smaller font size */
             padding: 8px 10px; /* Adjust padding */
@@ -236,15 +237,13 @@
         }
     
         .ai_sponsor img {
-            max-width: 100%; /* Ensure it's not wider than its container */
-            height: auto; /* Maintain aspect ratio */
-            object-fit: contain; /* Ensures the logo fits within its bounds without being cut off */
-            margin: auto; /* Center the logo if the container is larger */
+            max-height: 80px; /* Adjust this value so the logo fits well in landscape mode */
+            margin: auto; /* Center align the logo */
         }
         
         .circular-image {
-        width: 150px; /* Adjusted width */
-        height: 150px; /* Adjusted height to match the width */            
+        width: 100px; /* Adjusted width */
+        height: 100px; /* Adjusted height to match the width */            
     }
     
         /* Adjusting the layout for smaller screens */
