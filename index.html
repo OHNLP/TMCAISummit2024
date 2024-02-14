@@ -251,36 +251,37 @@
             margin: 10px auto; /* Center the logo and provide some spacing */
         }
 
-        /* Adjust the Location section for better alignment */
+        /* Center-align the content within the container for mobile */
         .widget-description .container .col-md-8 {
-            text-align: center; /* Center-align the content */
+            text-align: center; /* Center-align the content for mobile */
         }
     
-        /* Adjust the Location heading size and margin for mobile */
-        .widget-description h3 {
-            font-size: 18px; /* Adjust font size as necessary */
-            margin: 0 auto; /* Center-align the heading */
-            padding: 0 10px; /* Add some padding for better spacing */
+        /* Adjust the Registration button and program link for mobile */
+        .widget-description .container .col-md-8 > div,
+        .widget-description .container .col-md-8 > div > a,
+        .widget-description .container .col-md-8 > div + div {
+            width: 100%; /* Use the full width for mobile */
+            margin: 10px 0; /* Adjust spacing around the elements */
+            display: block; /* Ensure elements are block-level for correct spacing */
+            text-align: center; /* Center-align text and elements */
         }
     
-        /* Adjust the Registration button's alignment and size */
-        .widget-description .container .col-md-8 > div {
-            width: 100%; /* Use full container width */
-            margin: 20px auto; /* Add some top margin for spacing and auto for horizontal centering */
-            display: flex; /* Use flexbox for better alignment */
-            justify-content: center; /* Center content horizontally */
-            align-items: center; /* Center content vertically */
-        }
-    
-        /* Ensure the Registration link/button is properly styled */
-        .widget-description a {
-            font-size: 18px; /* Adjust link font size as necessary */
-            padding: 10px 20px; /* Adjust padding for better button sizing */
+        /* Specific styles for the Registration button */
+        .widget-description .container .col-md-8 > div > a {
+            padding: 10px 20px; /* Adjust button padding */
             background-color: #006791; /* Button background color */
             color: #fff; /* Button text color */
             border-radius: 4px; /* Rounded corners for the button */
-            text-decoration: none; /* Remove underline from link */
-            display: inline-block; /* Make the link behave like a block for padding */
+            text-decoration: none; /* Remove underline from the link */
+            display: inline-block; /* Make the link behave like a block for padding and centering */
+            font-size: 18px; /* Adjust font size as necessary */
+        }
+    
+        /* Style adjustments for the program link for consistency */
+        .widget-description .container .col-md-8 > div + div > a {
+            font-size: 18px; /* Match font size with the Registration button */
+            color: blue; /* Keep the link color if needed */
+            text-decoration: underline; /* Underline for link indication */
         }
     }    
         
