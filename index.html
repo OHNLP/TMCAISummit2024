@@ -285,6 +285,13 @@
             display: flex; /* Keep using flex for alignment */
             justify-content: space-around; /* Adjust spacing as needed */
         }
+
+        /* Adjustments for the Triomics logo to prevent it from being cut off */
+        .ai_sponsor img {
+            max-width: 100%; /* Allows the logo to scale down to fit the container width */
+            height: auto; /* Maintains the aspect ratio of the logo */
+            margin: 0 auto; /* Center the logo horizontally */
+        }
     }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
