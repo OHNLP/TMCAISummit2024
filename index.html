@@ -240,6 +240,14 @@
             display: inline-flex; /* Use inline-flex to keep them in a row */
             justify-content: space-around; /* Distribute space around items */
         }
+
+        /* Adjustments for sponsor logos on smaller screens */
+        .ai_sponsor img {
+            max-width: 80%; /* Adjust logo width to ensure it fits within the screen, change as needed */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: contain; /* Ensure the logo fits within its box without being cut off */
+            margin: 10px auto; /* Center the logo and provide some spacing */
+        }
     }    
         
    /* Add the new media query CSS here */
