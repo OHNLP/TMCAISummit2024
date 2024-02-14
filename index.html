@@ -251,24 +251,36 @@
             margin: 10px auto; /* Center the logo and provide some spacing */
         }
 
-        /* Adjustments for the Location section */
-        .widget-description h3 {
-            text-align: center; /* Center-align the text for the Location */
-            font-size: 18px; /* Optional: Adjust the font size for better fit */
-        }
-    
-        /* Adjustments for the Registration button */
-        .widget-description > .container > .col-md-8 > div {
-            width: 80%; /* Adjust the width of the button's container */
-            margin: 20px auto; /* Center the button horizontally and add some vertical margin for spacing */
+        /* Adjust the Location section for better alignment */
+        .widget-description .container .col-md-8 {
             text-align: center; /* Center-align the content */
         }
     
-        /* Ensure the Registration link inside the button is also centered */
+        /* Adjust the Location heading size and margin for mobile */
+        .widget-description h3 {
+            font-size: 18px; /* Adjust font size as necessary */
+            margin: 0 auto; /* Center-align the heading */
+            padding: 0 10px; /* Add some padding for better spacing */
+        }
+    
+        /* Adjust the Registration button's alignment and size */
+        .widget-description .container .col-md-8 > div {
+            width: 100%; /* Use full container width */
+            margin: 20px auto; /* Add some top margin for spacing and auto for horizontal centering */
+            display: flex; /* Use flexbox for better alignment */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+        }
+    
+        /* Ensure the Registration link/button is properly styled */
         .widget-description a {
-            display: inline-block; /* Allow margin auto to work */
-            width: auto; /* Let the link size according to its content */
-            margin: 0 auto; /* Center the link */
+            font-size: 18px; /* Adjust link font size as necessary */
+            padding: 10px 20px; /* Adjust padding for better button sizing */
+            background-color: #006791; /* Button background color */
+            color: #fff; /* Button text color */
+            border-radius: 4px; /* Rounded corners for the button */
+            text-decoration: none; /* Remove underline from link */
+            display: inline-block; /* Make the link behave like a block for padding */
         }
     }    
         
