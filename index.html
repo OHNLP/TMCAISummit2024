@@ -33,6 +33,15 @@
         color: rgba(83, 192, 247, 0.91);
     }
 
+    /* 去掉指定列表项的点（bullet point） */
+    ul.quote-content > li > strong {
+        list-style: none; /* 移除点 */
+        display: inline-block; /* 保持结构 */
+        padding-left: 0; /* 移除左侧多余的间距 */
+        margin-left: 0; /* 移除多余的外边距 */
+    }
+    
+
 /*     /* Adjust the size of the logo here */
     .header-logo-img {
         width: 300px; /* You can change this value to adjust the size */
